@@ -1,4 +1,5 @@
 import pandas as pd
+from icecream import ic
 
 # 1 Створіть DataFrame Pandas із щонайменше 5 рядками та 3 стовпцями. Стовпці можуть представляти різні атрибути (наприклад, Ім'я, Вік, Місто).
 
@@ -11,7 +12,7 @@ df1 = pd.DataFrame(
         ["Kate", 27, "San Francisco"],
     ],
     index=[1, 2, 3, 4, 5],
-    columns=["Name", "date", "City"],
+    columns=["Name", "Age", "City"],
 )
 
 # 2 Додайте новий стовпець до DataFrame, який представляє числове значення.
@@ -37,3 +38,11 @@ describe = df2.describe()
 # 7 Знайдіть та виведіть унікальні значення у категорійному стовпці.
 
 unique = df2["1"].unique()
+
+ic(
+    df1,
+    filter,
+    head,
+    describe,
+    unique,
+)
